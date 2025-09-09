@@ -1,0 +1,41 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>StudyForge</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/dash.js"></script>
+    </head>
+    <body>
+        <nav class="navbar">
+            <a href="index.html" class="logo">StudyForge</a>
+            <ul>
+                <li><a href="flashcards.html">Flashcards</a></li>
+                <li><a href="quizzes.html">Quizzes</a></li>
+                <li><a href="notes.html">Notes</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+
+        <div sty;e="padding:20;">
+            <h1 class="center-text">Welcome to StudyForge!</h1>
+            <p class="center-text">Your personal study companion. Use the navigation bar to access flashcards, quizzes, and notes.</p>
+            <p class="center-text">Login to gain access to even more tools!</p>
+        </div>
+
+        <div class="page-center">
+            <form id="loginForm" class="login-form">
+                <h4 class="center">Please Login</h4>
+
+                <input class="input" type="text" id="username" placeholder="Username"><br>
+                <input class="input" type="password" id="password" placeholder="Password"><br>
+
+                <button type="button" class="input-btn" onclick="checkLogin()">Login</button>
+
+                <p id="error"></p>
+            </form>
+        </div>
+
+        <script src="js/login.js"></script>
+    </body>
+</html>
